@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovaStack Formación | Capacitación Tecnológica</title>
+    <!-- Tailwind CSS (Vía CDN para GitHub Pages) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuente moderna y redondeada para un diseño accesible -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            purple: '#3B0764', /* Morado oscuro / Violeta para innovación */
+                            dark: '#2E1065',
+                            mint: '#6EE7B7',   /* Verde menta para frescura y tecnología */
+                            mintlight: '#D1FAE5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Nunito', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Barra de Navegación -->
+    <nav class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <img src="image_2b5f19.png" alt="Logo InnovaStack Formación" class="h-14 md:h-16">
+            <div class="hidden md:flex space-x-8">
+                <a href="#cursos" class="text-brand-dark font-bold hover:text-brand-mint transition">Cursos</a>
+                <a href="#instructor" class="text-brand-dark font-bold hover:text-brand-mint transition">El Instructor</a>
+                <a href="#contacto" class="text-brand-dark font-bold hover:text-brand-mint transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-brand-dark text-white py-24">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
+                Impulsa tu carrera con <span class="text-brand-mint">InnovaStack Formación</span>
+            </h1>
+            <p class="text-lg md:text-xl text-brand-mintlight mb-10 max-w-2xl mx-auto">
+                Capacitación tecnológica de alto nivel. Aprende desarrollo de software, gestión de bases de datos y dirección de proyectos de innovación.
+            </p>
+            <a href="#cursos" class="inline-block bg-brand-mint text-brand-dark px-8 py-3 rounded-full font-bold text-lg hover:bg-white transition shadow-lg">
+                Explorar Cursos
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Cursos -->
+    <section id="cursos" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-extrabold text-center text-brand-purple mb-12">Nuestros Programas Destacados</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Curso 1 -->
+                <div class="bg-white rounded-3xl shadow-md p-8 hover:shadow-xl transition border-t-4 border-brand-mint">
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Data & SQL Avanzado</h3>
+                    <p class="text-gray-600 mb-6">Domina la gestión, creación de triggers y consultas complejas en SQL Server y Oracle para el control total de la información.</p>
+                    <button class="w-full bg-brand-purple text-white font-semibold py-2 rounded-xl hover:bg-brand-dark transition">Ver Temario</button>
+                </div>
+                
+                <!-- Curso 2 -->
+                <div class="bg-white rounded-3xl shadow-md p-8 hover:shadow-xl transition border-t-4 border-brand-mint">
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Desarrollo Web & Backend</h3>
+                    <p class="text-gray-600 mb-6">Aprende a construir ecosistemas completos utilizando .NET C#, Python, integrando interfaces con Bootstrap y Tailwind CSS.</p>
+                    <button class="w-full bg-brand-purple text-white font-semibold py-2 rounded-xl hover:bg-brand-dark transition">Ver Temario</button>
+                </div>
+                
+                <!-- Curso 3 -->
+                <div class="bg-white rounded-3xl shadow-md p-8 hover:shadow-xl transition border-t-4 border-brand-mint">
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Proyectos de Innovación</h3>
+                    <p class="text-gray-600 mb-6">Metodologías ágiles y gestión estratégica para planificar y ejecutar proyectos tecnológicos con alto impacto institucional.</p>
+                    <button class="w-full bg-brand-purple text-white font-semibold py-2 rounded-xl hover:bg-brand-dark transition">Ver Temario</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Instructor -->
+    <section id="instructor" class="bg-brand-mintlight/40 py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-extrabold text-brand-purple mb-6">Conoce a Eduardo Martínez</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Desarrollador, analista de sistemas y Maestro en Dirección de Proyectos de Innovación. Con experiencia sólida creando plataformas robustas de gestión y aplicaciones de impacto ciudadano, aporta una visión técnica y estratégica a cada curso.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-center py-8">
+        <p class="text-brand-mintlight font-semibold">© 2026 InnovaStack Formación. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
