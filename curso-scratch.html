@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso: Desarrollo Web & Juego en Scratch | InnovaStack Formación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            purple: '#3B0764',
+                            dark: '#2E1065',
+                            mint: '#6EE7B7',
+                            mintlight: '#D1FAE5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Nunito', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html">
+                <img src="image_2b5f19.png" alt="Logo InnovaStack Formación" class="h-14 md:h-16">
+            </a>
+            <a href="index.html#cursos" class="inline-flex items-center text-brand-purple font-bold hover:text-brand-mint transition">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Volver al Inicio
+            </a>
+        </div>
+    </nav>
+
+    <section class="bg-brand-dark text-white py-20 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <span class="bg-brand-purple text-brand-mint px-4 py-1.5 rounded-full text-sm font-bold tracking-wide uppercase">Curso Infantil / Juvenil</span>
+            <h1 class="text-3xl md:text-5xl font-extrabold mt-4 mb-4 tracking-tight">
+                Desarrollo Web & Juego en Scratch 🚀
+            </h1>
+            <p class="text-xl font-semibold text-brand-mint mb-6">Temario: Creación de Videojuegos con Scratch</p>
+            <p class="text-brand-mintlight max-w-2xl mx-auto text-base md:text-lg">
+                Una aventura de aprendizaje diseñada para que los más jóvenes dominen la lógica de la programación, despierten su creatividad digital y construyan sus propios mundos interactivos.
+            </p>
+        </div>
+        <div class="absolute top-0 right-0 -mt-12 -mr-12 w-48 h-48 rounded-full bg-brand-purple opacity-20 blur-2xl"></div>
+    </section>
+
+    <section class="py-16 max-w-5xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-brand-dark text-center mb-12">Plan de Estudios Módulo a Módulo</h2>
+
+        <div class="space-y-8">
+            
+            <div class="bg-white rounded-3xl shadow-sm p-6 md:p-8 border-l-8 border-brand-purple hover:shadow-md transition">
+                <div class="flex items-start justify-between flex-wrap gap-2 mb-4">
+                    <h3 class="text-xl md:text-2xl font-bold text-brand-dark">Módulo 1: ¡Bienvenidos al Mundo de la Programación!</h3>
+                    <span class="bg-purple-100 text-brand-purple text-xs font-bold px-3 py-1 rounded-full">Fase Inicial</span>
+                </div>
+                <p class="text-gray-600 italic mb-6">El objetivo es perderle el miedo a la plataforma y entender la lógica básica de los bloques.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold text-brand-purple mb-2">Conceptos Clave:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>¿Qué es Scratch y para qué sirve? Conociendo la interfaz (escenario, objetos y mochila).</li>
+                            <li>El concepto de algoritmo: Instrucciones paso a paso sin computadora.</li>
+                            <li>Mi primer bloque: Eventos básicos (Al presionar bandera verde).</li>
+                            <li>Movimiento y coordenadas: Ejes X y Y de forma amigable.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-mintlight/30 p-4 rounded-2xl border border-brand-mint/40">
+                        <h4 class="font-bold text-brand-dark mb-1 flex items-center">⭐ Práctica del Módulo:</h4>
+                        <p class="text-gray-700">Hacer que el gato de Scratch (o su personaje favorito) camine y salude.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-sm p-6 md:p-8 border-l-8 border-brand-mint hover:shadow-md transition">
+                <div class="flex items-start justify-between flex-wrap gap-2 mb-4">
+                    <h3 class="text-xl md:text-2xl font-bold text-brand-dark">Módulo 2: Vida y Animación (Arte Digital)</h3>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">Creatividad</span>
+                </div>
+                <p class="text-gray-600 italic mb-6">Enfocado en la creatividad visual y la personalización.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold text-brand-purple mb-2">Conceptos Clave:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Editor de pintura: Dibujar, editar y dar color a los personajes (Sprites).</li>
+                            <li>Animación cuadro por cuadro: Uso de "Siguiente disfraz" y bucles ("Por siempre").</li>
+                            <li>Fondos (Backdrops): Cómo cambiar escenarios mágicamente.</li>
+                            <li>Sonidos y música: Añadir efectos especiales a las acciones.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-mintlight/30 p-4 rounded-2xl border border-brand-mint/40">
+                        <h4 class="font-bold text-brand-dark mb-1 flex items-center">⭐ Práctica del Módulo:</h4>
+                        <p class="text-gray-700">Crear una pequeña historia animada o un baile con música de fondo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-sm p-6 md:p-8 border-l-8 border-brand-purple hover:shadow-md transition">
+                <div class="flex items-start justify-between flex-wrap gap-2 mb-4">
+                    <h3 class="text-xl md:text-2xl font-bold text-brand-dark">Módulo 3: ¡Toma el Control! (Interacción)</h3>
+                    <span class="bg-purple-100 text-brand-purple text-xs font-bold px-3 py-1 rounded-full">Interactividad</span>
+                </div>
+                <p class="text-gray-600 italic mb-6">Aquí empiezan a programar la jugabilidad real.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold text-brand-purple mb-2">Conceptos Clave:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Eventos de teclado y ratón: Controlar personajes usando las flechas.</li>
+                            <li>Sensores básicos: Bloque "Rebotar si toca un borde".</li>
+                            <li>Condicionales simples: La magia del "Si... entonces".</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-mintlight/30 p-4 rounded-2xl border border-brand-mint/40">
+                        <h4 class="font-bold text-brand-dark mb-1 flex items-center">⭐ Práctica del Módulo:</h4>
+                        <p class="text-gray-700">Crear un laberinto sencillo donde el jugador debe llegar a la meta sin tocar las paredes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-sm p-6 md:p-8 border-l-8 border-brand-mint hover:shadow-md transition">
+                <div class="flex items-start justify-between flex-wrap gap-2 mb-4">
+                    <h3 class="text-xl md:text-2xl font-bold text-brand-dark">Módulo 4: Puntos, Vidas y Competencia (Variables)</h3>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">Lógica Matemática</span>
+                </div>
+                <p class="text-gray-600 italic mb-6">Introducción a conceptos matemáticos y lógica de retención en juegos.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold text-brand-purple mb-2">Conceptos Clave:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>¿Qué es una variable? Entendido de forma didáctica como "una caja que guarda números".</li>
+                            <li>Sistema de Puntos (Score): Sumar puntos al recolectar objetos que caen.</li>
+                            <li>Sistema de Vidas: Restar vidas al hacer contacto con un enemigo.</li>
+                            <li>Fin del juego: Programar pantallas de "¡Ganaste!" o "Game Over".</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-mintlight/30 p-4 rounded-2xl border border-brand-mint/40">
+                        <h4 class="font-bold text-brand-dark mb-1 flex items-center">⭐ Práctica del Módulo:</h4>
+                        <p class="text-gray-700">Terminar la estructura del clásico juego de atrapar objetos desde el cielo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-sm p-6 md:p-8 border-l-8 border-brand-purple hover:shadow-md transition">
+                <div class="flex items-start justify-between flex-wrap gap-2 mb-4">
+                    <h3 class="text-xl md:text-2xl font-bold text-brand-dark">Módulo 5: Enemigos y Obstáculos Inteligentes</h3>
+                    <span class="bg-purple-100 text-brand-purple text-xs font-bold px-3 py-1 rounded-full">Mecánicas de Juego</span>
+                </div>
+                <p class="text-gray-600 italic mb-6">Hacer que el juego sea un verdadero reto.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold text-brand-purple mb-2">Conceptos Clave:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Clones: Generar múltiples enemigos o monedas sin repetir código individual.</li>
+                            <li>Movimientos aleatorios: Uso de bloques de "número al azar".</li>
+                            <li>Mensajes (Broadcasting): Comunicación entre objetos (Ej. cambio de nivel).</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-mintlight/30 p-4 rounded-2xl border border-brand-mint/40">
+                        <h4 class="font-bold text-brand-dark mb-1 flex items-center">⭐ Práctica del Módulo:</h4>
+                        <p class="text-gray-700">Añadir un enemigo con inteligencia de persecución o patrullaje dinámico de lado a lado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-sm p-6 md:p-8 border-l-8 border-brand-mint hover:shadow-md transition">
+                <div class="flex items-start justify-between flex-wrap gap-2 mb-4">
+                    <h3 class="text-xl md:text-2xl font-bold text-brand-dark">Módulo 6: Proyecto Final y Lanzamiento 🏆</h3>
+                    <span class="bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-full">Certificación</span>
+                </div>
+                <p class="text-gray-600 italic mb-6">Consolidación del aprendizaje y fomento de la confianza.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold text-brand-purple mb-2">Conceptos Clave:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Planificación: Estructurar un boceto en papel de la arquitectura del juego.</li>
+                            <li>Desarrollo libre: Programación integral aplicando todos los módulos.</li>
+                            <li>Depuración (Buscando Bugs): Encontrar errores y comprenderlos como parte del proceso.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-brand-mintlight/30 p-4 rounded-2xl border border-brand-mint/40">
+                        <h4 class="font-bold text-brand-dark mb-1 flex items-center">🏆 Cierre de Proyecto:</h4>
+                        <p class="text-gray-700">Presentación abierta de su videojuego final ante la clase y padres de familia, explicando la lógica detrás de su código.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-16 text-center">
+            <h3 class="text-xl font-bold text-brand-dark mb-4">¿Listo para inscribir a tu hijo en este programa?</h3>
+            <a href="index.html#contacto" class="inline-block bg-brand-purple text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-dark transition shadow-lg">
+                Solicitar Registro al Curso
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-center py-8">
+        <p class="text-brand-mintlight font-semibold">© 2026 InnovaStack Formación. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
