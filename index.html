@@ -84,7 +84,7 @@
                 <div class="bg-white rounded-3xl shadow-md p-8 hover:shadow-xl transition border-t-4 border-brand-mint">
                     <h3 class="text-xl font-bold text-brand-dark mb-3">Proyectos de Innovación</h3>
                     <p class="text-gray-600 mb-6">Metodologías ágiles y gestión estratégica para planificar y ejecutar proyectos tecnológicos con alto impacto institucional.</p>
-                    <button class="w-full bg-brand-purple text-white font-semibold py-2 rounded-xl hover:bg-brand-dark transition">Ver Temario</button>
+                    <button href="curso-scratch.html" class="w-full bg-brand-purple text-white font-semibold py-2 rounded-xl hover:bg-brand-dark transition">Ver Temario</button>
                 </div>
             </div>
         </div>
@@ -99,6 +99,58 @@
             </p>
         </div>
     </section>
+   <!-- Sección de Contacto -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-extrabold text-center text-brand-purple mb-8">Contáctanos</h2>
+            <p class="text-center text-gray-600 mb-10">¿Tienes dudas sobre los temarios o quieres inscribirte? Déjanos tus datos y te responderemos a la brevedad.</p>
+            
+            <!-- Formulario -->
+            <form action=https://formspree.io/f/meebgpyy method="POST" class="bg-gray-50 p-8 rounded-3xl shadow-md border-t-4 border-brand-mint">
+                
+                <div class="mb-6">
+                    <label for="nombre" class="block text-sm font-bold text-brand-dark mb-2">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-mint focus:border-transparent transition" placeholder="Tu nombre" required>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="email" class="block text-sm font-bold text-brand-dark mb-2">Correo electrónico</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-mint focus:border-transparent transition" placeholder=tu@correo.com required>
+                </div>
+
+                <div class="mb-6">
+                    <label for="curso" class="block text-sm font-bold text-brand-dark mb-2">Curso de interés</label>
+                    <select id="curso" name="curso" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-mint focus:border-transparent transition">
+                        <option value="sql">Data & SQL Avanzado</option>
+                        <option value="web">Desarrollo Web & Backend</option>
+                        <option value="innovacion">Proyectos de Innovación</option>
+                        <option value="otro">Otro / Duda general</option>
+                    </select>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="mensaje" class="block text-sm font-bold text-brand-dark mb-2">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-mint focus:border-transparent transition" placeholder="¿En qué te podemos ayudar?" required></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-brand-purple text-white font-bold py-3 rounded-xl hover:bg-brand-dark transition shadow-lg text-lg">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+<!-- Botón flotante de WhatsApp -->
+    <a href=https://wa.me/525500000000?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20los%20cursos%20de%20InnovaStack. 
+       target="_blank" 
+       class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#128C7E] hover:-translate-y-1 hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center">
+        
+        <!-- Ícono de WhatsApp (SVG) -->
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.031 21.066h-.011c-1.928 0-3.816-.525-5.464-1.522l-.391-.235-4.062 1.064 1.084-3.963-.258-.41A11.968 11.968 0 011.396 12C1.396 5.385 6.78 0 13.396 0C16.592 0 19.57 1.246 21.83 3.506C24.09 5.767 25.337 8.745 25.337 12c0 6.615-5.384 12-12 12h-1.306zm-5.69-3.218c1.558.918 3.38.152 5.69.152 5.485 0 9.95-4.464 9.95-9.95 0-2.658-1.036-5.158-2.915-7.037A9.914 9.914 0 0012.036 2.05c-5.486 0-9.95 4.464-9.95 9.95 0 1.956.551 3.844 1.583 5.502l1.096-3.003-3.036 1.067z"/>
+            <path d="M17.48 14.156c-.287-.144-1.696-.838-1.959-.933-.263-.096-.454-.144-.645.144-.191.288-.742.933-.909 1.124-.167.192-.335.216-.622.072-1.312-.663-2.39-1.341-3.322-2.883-.167-.288.167-.288.742-1.432.072-.144.036-.288-.036-.432-.072-.144-.645-1.558-.884-2.133-.234-.564-.473-.487-.645-.497-.167-.01-.359-.01-.55-.01-.191 0-.502.072-.765.36-.263.288-1.004.982-1.004 2.392 0 1.41.103 2.775 1.195 3.999 1.464 1.637 3.535 2.784 5.922 3.326.568.129 1.01.206 1.354.264.57.095 1.088.082 1.498-.01.458-.103 1.696-.693 1.935-1.363.239-.67.239-1.244.167-1.363-.072-.12-.263-.192-.55-.336z"/>
+        </svg>
+    </a>
 
     <!-- Footer -->
     <footer class="bg-brand-dark text-center py-8">
